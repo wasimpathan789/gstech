@@ -1,10 +1,10 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { MdOutlineClose,MdOutlineMenu } from "react-icons/md";
+import { MdOutlineClose, MdOutlineMenu } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
 
-import logo from '../../assets/images/logo/logo2.jpg'
+import logo from "../../assets/images/logo/logo3.jpg";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -14,54 +14,57 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-    
       <div className="logo">
         <img src={logo} className="logo" alt="" />
-        
       </div>
-      <div className="navbarContent">
+      <div className={click ? "navbarContent" : "navbarContentActive"}>
         <div className="navList">
-        <Link className="navLinks" to={"/"} style={{textDecoration:"none"}}>
-        <p>Home</p>
-        </Link>
-        <Link  className="navLinks" to={"/"} style={{textDecoration:"none"}}>
-        <p>About Us</p>
-        </Link>
-        <Link className="navLinks"  to={"/"} style={{textDecoration:"none"}}>
-        <p>Our Services
-        </p>
-        </Link>
-        <Link  className="navLinks" to={"/"} style={{textDecoration:"none"}}>
-        <p>Contact Us</p>
-        </Link>
-
-      </div>
-      <div className="callContainer">
-        <div className="call" >
-        <h2>Call us :</h2>
-        <p>+966 595007999</p>
-
+          <Link
+            className="navLinks"
+            to={"/"}
+            style={{ textDecoration: "none" }}
+          >
+            <p>Home</p>
+          </Link>
+          <Link
+            className="navLinks"
+            to={"/"}
+            style={{ textDecoration: "none" }}
+          >
+            <p>About Us</p>
+          </Link>
+          <Link
+            className="navLinks"
+            to={"/"}
+            style={{ textDecoration: "none" }}
+          >
+            <p>Our Services</p>
+          </Link>
+          <Link
+            className="navLinks"
+            to={"/"}
+            style={{ textDecoration: "none" }}
+          >
+            <p>Contact Us</p>
+          </Link>
         </div>
-        
+        <div className="callContainer">
+          <div className="call">
+            <h2>Call us :</h2>
+            <p>+966 595007999</p>
+          </div>
+        </div>
       </div>
 
-        </div>
-
-        <div className="hamburger" onClick={clickHandler}>
+      <div className="hamburger" onClick={clickHandler}>
         {click ? (
           <MdOutlineClose style={{ fontSize: "35px", color: "white" }} />
         ) : (
           <RiMenu4Fill style={{ fontSize: "35px", color: "white" }} />
         )}
       </div>
-    
-        
-      
 
-      
-    
-
-{/* 
+      {/* 
       <ul className={click ? "navbar-lists" : "navbar-lists active"}>
         <li>
           <Link
@@ -106,10 +109,6 @@ const Navbar = () => {
           </Link>
         </li>
       </ul> */}
-
-      
-
-   
     </nav>
   );
 };
