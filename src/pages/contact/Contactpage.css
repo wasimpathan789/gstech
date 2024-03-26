@@ -1,0 +1,89 @@
+.container{
+    background-color: pink;
+}
+
+.address{
+    background-color: blueviolet;
+    padding: 80px;
+    /* width: 100%; */
+}
+.addressCard{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.iconDiv{
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-light-7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+
+    height: 25px;
+    /* font-family: var(--font-primary); */
+    width: 100%;
+    max-width: 100%;
+    color: var(--color-light-1);
+   
+}
+.cardLeft{
+
+}
+.cardLeft>p { 
+       font-size: 15px;
+    line-height: 1.7;
+
+
+}
+
+/* right container  */
+.rightContainer{
+    /* background-color: green; */
+}
+.formTop{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    gap: 30px;
+}
+.nameContainer{
+    width: 100%;
+  
+    margin-bottom: 10px;
+
+}
+.nameContainer > h5 {
+    color: var(--color-dark-1);
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 10px;
+}
+.nameContainer>input {
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #DDDDDD;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 15px 22px;
+    transition: all .15s cubic-bezier(.165,.84,.44,1);
+}
+.nameContainer>textarea {
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #DDDDDD;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 15px 22px;
+    transition: all .15s cubic-bezier(.165,.84,.44,1);
+}
+
