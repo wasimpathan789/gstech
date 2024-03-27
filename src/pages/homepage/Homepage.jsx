@@ -5,9 +5,14 @@ import Contactpage from '../contact/Contactpage'
 
 const Homepage = () => {
   return (
-    <div className='container' >
-      <h1>hu</h1>
-      <Contactpage/>
+    <div className='' >
+      <Navbar/>
+      <div className="wrapper">
+        hey
+
+      </div>
+      <Footer/>
+
 
 
     </div>

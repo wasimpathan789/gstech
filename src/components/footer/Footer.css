@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
-.container{
-	max-width: 1170px;
-    width: fit-content;
-	margin:auto;
-    line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
 .row{
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
 }
 ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
-    padding: 70px 0;
+	background-color: var(--color-dark-6);
+	padding: 30px 60px;
+	width: fit-content;
+	margin:auto;
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+
+	overflow: hidden;
+}
+.footerTop{
+	border-bottom: 1px solid white;
 }
 .footer-col{
-   width: 25%;
+   width: 100%;
    padding: 0 15px;
+   /* background-color: red; */
 }
 .footer-col h4{
 	font-size: 18px;
@@ -41,6 +45,13 @@ ul{
 	box-sizing: border-box;
 	width: 50px;
 }
+.footer-col > ul {
+padding: 0;
+
+}
+.footer-col > ul > li {
+	/* background-color: yellow; */
+}
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -54,17 +65,35 @@ ul{
 	display: block;
 	transition: all 0.3s ease;
     /* font-family: Poppins, sans-serif; */
+
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
+}
+
+.footerBottom{
+	/* background-color: red; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 30px;
+}
+.footerBottom > h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 500;
 }
 .social-links{
 	display: flex;
 
 
 }
-.footer-col .social-links a{
+.footerBottom .social-links a{
 	display: inline-block;
 	/* height: 50px;
 	width: 50px; */
@@ -83,20 +112,35 @@ ul{
 	background-color: transparent;
 
 }
-.footer-col .social-links a:hover{
+.footerBottom .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
 }
 
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+
+@media screen and (max-width: 1080px) {
+	.footer {
+	  padding: 10px 10px;
+	}
+	.footerTop{
+		overflow: hidden;
+		padding: 0;
+		width: 100%;
+	}
+	
+	.footer-col{
+		padding: 0;
+	}
+.row{
+	grid-template-columns: repeat(2,1fr);
+  }
 }
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
+@media screen and (max-width: 580px) {
+	.row{
+		grid-template-columns: repeat(1,1fr);
+	  }
+	  .footerBottom{
+		align-items: flex-start;
+		margin-top: 30px;
+	  }
 }
