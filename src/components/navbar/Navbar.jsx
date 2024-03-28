@@ -28,21 +28,21 @@ const Navbar = () => {
           </Link>
           <Link
             className="navLinks"
-            to={"/"}
+            to={"/about"}
             style={{ textDecoration: "none" }}
           >
             <p>About Us</p>
           </Link>
           <Link
             className="navLinks"
-            to={"/"}
+            to={"/service"}
             style={{ textDecoration: "none" }}
           >
             <p>Our Services</p>
           </Link>
           <Link
             className="navLinks"
-            to={"/"}
+            to={"/contact"}
             style={{ textDecoration: "none" }}
           >
             <p>Contact Us</p>

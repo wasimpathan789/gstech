@@ -1,0 +1,139 @@
+.itConsultingContainer {
+}
+
+.itConsulting,
+.itConsulting2 {
+  display: flex;
+  gap: 30px;
+  padding: 80px;
+}
+.itConsulting2 {
+  background-color: #081158;
+}
+.itCotainerLeft {
+  flex: 0.7;
+  /* background-color: green; */
+}
+
+.itCotainerLeft > h1 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-family: Sato, sans-serif;
+  font-size: 64px;
+  line-height: 1.1em;
+  font-weight: 500;
+  color: #081158;
+  font-weight: 500;
+}
+.itCotainerLeft > h5 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: "Red Hat Display", sans-serif;
+  color: #081158;
+}
+.itCotainerLeft2 > h1 {
+  color: white;
+}
+.itCotainerLeft2 > h5 {
+  color: white;
+}
+.itContainerContent > div {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 40px;
+  /* background-color: red; */
+  /* background-color: #081158; */
+}
+.itContainerContent > div > p {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
+  color: #081158;
+}
+.itContainerContent2 > div > p {
+  color: white;
+}
+
+.itCotainerRight {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* background-color: gold; */
+  height: 400px;
+  margin-bottom: 80px;
+}
+.itCotainerRight > img {
+  width: 80%;
+  height: 320px;
+  position: absolute;
+  bottom: -80px;
+  border-radius: 10px;
+  z-index: 111;
+}
+.bgImage {
+  width: 35vw;
+  height: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #081158;
+  background-image: url("https://assets.website-files.com/5e80894f63c557e083ed96b4/5e80addcd75a9b21b0f7c7f9_Shapes.svg");
+  background-position: 0% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.bgImage2 {
+  background-color: var(--color-blue-4);
+}
+.wasim {
+  color: pink;
+}
+
+@media screen and (max-width: 1080px) {
+  .itConsulting {
+    padding: 40px 80px;
+    /* background-color: red; */
+    flex-direction: column;
+  }
+  .itCotainerLeft > h1 {
+    font-size: 30px;
+  }
+  .bgImage {
+    height: 50%;
+    height: 400px;
+  }
+  .itCotainerRight {
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .itConsulting {
+    padding: 40px 10px;
+  }
+  .itContainerContent > div {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .itConsulting {
+    padding: 30px 10px;
+  }
+  .itCotainerRight > img {
+    width: 80%;
+    height: 320px;
+    position: absolute;
+    bottom: -80px;
+    border-radius: 10px;
+    z-index: 111;
+  }
+  .bgImage {
+    height: 50%;
+    height: 300px;
+    background-size: contain;
+  }
+}

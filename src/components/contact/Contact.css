@@ -1,129 +1,122 @@
-.container{
-    background-color: pink;
+.contactContainer {
 }
 
-.address{
-    background-color: var(--color-light-4);
-    padding: 80px;
-    display: flex;
-    gap: 40px;
-    /* width: 100%; */
+.address {
+  background-color: var(--color-light-4);
+  padding: 80px;
+  display: flex;
+  gap: 40px;
+  /* width: 100%; */
 }
-.addressCard{
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
+.addressCard {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
 }
-.iconDiv{
-    width: 60px;
-    height: 60px;
-    background-color: var(--color-light-7);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.iconDiv {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-light-7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon {
-
-    height: 25px;
-    /* font-family: var(--font-primary); */
-    width: 100%;
-    max-width: 100%;
-    color: var(--color-light-1);
-   
+  height: 25px;
+  /* font-family: var(--font-primary); */
+  width: 100%;
+  max-width: 100%;
+  color: var(--color-light-1);
 }
-.cardLeft{
-
+.cardLeft {
 }
-.cardLeft>p { 
-    font-family: var(--font-primary);
-    color: var(--color-light-1);
-    font-size: 15px;
-    line-height: 1.7;
-    font-weight: 400;
-
+.cardLeft > p {
+  font-family: var(--font-primary);
+  color: var(--color-light-1);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 /* right container  */
-.rightContainer{
-    /* background-color: green; */
-    flex: 1;
+.rightContainer {
+  /* background-color: green; */
+  flex: 1;
 }
 .rightContainer > h1,
-.leftContainer> h1 {
-    font-family: var(--font-primary);
-    color: var(--color-dark-1);
-    font-size: 24px;
-    font-weight: 500 !important;
-    margin-bottom: 30px;
+.leftContainer > h1 {
+  font-family: var(--font-primary);
+  color: var(--color-dark-1);
+  font-size: 24px;
+  font-weight: 500 !important;
+  margin-bottom: 30px;
 }
 .leftContainer {
-   flex: 1.5;
+  flex: 1.5;
 }
-.formTop{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    gap: 30px;
+.formTop {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 30px;
 }
-.nameContainer{
-    width: 100%;
-  
-    margin-bottom: 30px;
+.nameContainer {
+  width: 100%;
 
+  margin-bottom: 30px;
 }
 .nameContainer > h5 {
-    color: var(--color-dark-1);
-    font-size: 16px;
-    font-family: var(--font-primary);
-    margin-bottom: 15px;
-    font-weight: 500;
-    line-height: 1;
+  color: var(--color-dark-1);
+  font-size: 16px;
+  font-family: var(--font-primary);
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 1;
 }
-.nameContainer>input {
-    box-sizing: border-box;
-    outline: none;
-    width: 100%;
-    background-color: transparent;
-    border-radius: 8px;
-    border: 1px solid #DDDDDD;
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 15px 22px;
-    transition: all .15s cubic-bezier(.165,.84,.44,1);
+.nameContainer > input {
+  box-sizing: border-box;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 15px 22px;
+  transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.nameContainer>textarea {
-    box-sizing: border-box;
-    outline: none;
-    width: 100%;
-    background-color: transparent;
-    border-radius: 8px;
-    border: 1px solid #DDDDDD;
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 15px 22px;
-    transition: all .15s cubic-bezier(.165,.84,.44,1);
+.nameContainer > textarea {
+  box-sizing: border-box;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 15px 22px;
+  transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 
 @media screen and (max-width: 1080px) {
-	.address {
-        flex-direction: column;
-	  padding: 40px 80px;
-	}
+  .address {
+    flex-direction: column;
+    padding: 40px 80px;
+  }
 }
 
 @media screen and (max-width: 810px) {
-	.address {
-	  padding: 40px 40px;
-	}
+  .address {
+    padding: 40px 40px;
+  }
 }
 @media screen and (max-width: 580px) {
-	.address {
-	  padding: 30px 10px;
-	}
-    .formTop{
-        flex-direction: column;
-        gap: 0px;
-    }
+  .address {
+    padding: 30px 10px;
+  }
+  .formTop {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
