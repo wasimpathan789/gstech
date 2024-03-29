@@ -1,4 +1,18 @@
 .contactContainer {
+  background-color: transparent !important;
+}
+
+.contactHeadline {
+  background-color: white;
+  padding: 20px;
+}
+.contactHeadline > h1 {
+  text-align: center;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
 }
 
 .address {
