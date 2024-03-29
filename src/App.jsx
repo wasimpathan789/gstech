@@ -13,6 +13,9 @@ import ITConsulting from "./pages/servicepage/ITConsulting";
 import Business from "./pages/servicepage/Business";
 import DigitalTechnology from "./pages/servicepage/DigitalTechnology";
 import MsiSolution from "./pages/servicepage/MsiSolution";
+import Governance from "./pages/servicepage/Governance";
+import Projects from "./pages/servicepage/Projects";
+import ITInfrastructure from "./pages/servicepage/ITInfrastructure";
 AOS.init();
 const App = () => {
   return (
@@ -28,6 +31,9 @@ const App = () => {
             <Route path="/service/business" element={<Business />} />
             <Route path="/service/digital" element={<DigitalTechnology />} />
             <Route path="/service/msi" element={<MsiSolution />} />
+            <Route path="/service/governance" element={<Governance />} />
+            <Route path="/service/infra" element={<ITInfrastructure />} />
+            <Route path="/service/project" element={<Projects />} />
           </Route>
 
           {/* <Route path="/service" element={<Servicepage />}></Route> */}

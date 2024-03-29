@@ -21,7 +21,7 @@ const SubParagraphContainer2 = ({ text, animation }) => {
           marginTop: "2px",
         }}
       />
-      <span style={{ color: "white" }}>{text}</span>
+      <span className="itSpan2">{text}</span>
     </span>
   );
 };

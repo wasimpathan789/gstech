@@ -90,15 +90,93 @@
 .bgImage2 {
   background-color: var(--color-blue-4);
 }
-.wasim {
-  color: pink;
+.itSpan,
+.itSpan2 {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
+  color: #081158;
+}
+.itSpan2 {
+  color: white;
+}
+.infraDiv {
+  padding: 10px 90px;
+}
+.infraCardContainer {
+  display: flex;
+  /* padding: 80px; */
+  gap: 40px;
+  /* background-color: red; */
+  margin-top: 40px;
+}
+.infraCard {
+  background-color: #081158;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  border: 1px dotted red;
+}
+
+.infraCard > h2 {
+  text-align: center;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+}
+.infraCard > p {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: white;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.infraCard :hover {
+  /* background-color: white; */
+  border: 1px solid red;
+}
+.infraTwoCards {
+  padding: 80px;
+}
+.digitalCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.digitalWebType {
+  padding: 80px;
+}
+.digitalWebType > h2 {
+  font-family: "Red Hat Display", sans-serif;
+  color: red;
+  font-family: Sato, sans-serif;
+  font-size: 34px;
+  line-height: 1.1em;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1080px) {
-  .itConsulting {
+  .itConsulting,
+  .infraTwoCards,
+  .digitalWebType {
     padding: 40px 80px;
     /* background-color: red; */
     flex-direction: column;
+  }
+  .digitalWebType {
+    /* padding: 40px 80px; */
+  }
+  .digitalCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+    padding: 0px;
   }
   .itCotainerLeft > h1 {
     font-size: 30px;
@@ -107,20 +185,35 @@
     height: 50%;
     height: 400px;
   }
-  .itCotainerRight {
-  }
 }
 
 @media screen and (max-width: 810px) {
-  .itConsulting {
+  .infraCardContainer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 810px) {
+  .itConsulting,
+  .infraTwoCards {
     padding: 40px 10px;
   }
   .itContainerContent > div {
     padding: 10px;
   }
+  .digitalWebType {
+    padding: 10px;
+    /* background-color: yellow; */
+  }
+  .digitalWebType > h2 {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 580px) {
-  .itConsulting {
+  .digitalCardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .itConsulting,
+  .infraTwoCards {
     padding: 30px 10px;
   }
   .itCotainerRight > img {
@@ -135,5 +228,9 @@
     height: 50%;
     height: 300px;
     background-size: contain;
+  }
+  .infraDiv {
+    padding: 10px 40px;
+    margin-top: -10px;
   }
 }

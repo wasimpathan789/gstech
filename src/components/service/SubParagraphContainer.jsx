@@ -16,12 +16,11 @@ const SubParagraphContainer = ({ text, animation }) => {
       <MdKeyboardDoubleArrowRight
         style={{
           fontSize: "25px",
-          // marginTop: "15px",
           color: "red",
           marginTop: "2px",
         }}
       />
-      <span>{text}</span>
+      <span className="itSpan" style={{ color: "#081158" }}>{text}</span>
     </span>
   );
 };

@@ -38,7 +38,7 @@ const Service = ({ Children }) => {
           </Link>
           <Link
             className="serviceNavLinks"
-            to={"/service/it"}
+            to={"/service/project"}
             style={{ textDecoration: "none" }}
           >
             <p>
@@ -47,7 +47,7 @@ const Service = ({ Children }) => {
           </Link>
           <Link
             className="serviceNavLinks"
-            to={"/service/it"}
+            to={"/service/infra"}
             style={{ textDecoration: "none" }}
           >
             <p>
@@ -56,7 +56,7 @@ const Service = ({ Children }) => {
           </Link>
           <Link
             className="serviceNavLinks"
-            to={"/service/it"}
+            to={"/service/governance"}
             style={{ textDecoration: "none" }}
           >
             <p>
