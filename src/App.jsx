@@ -19,11 +19,9 @@ import ITInfrastructure from "./pages/servicepage/ITInfrastructure";
 AOS.init();
 const App = () => {
   return (
-    <div style={{ backgroundColor: "red", padding: 0 }}>
+    <div style={{ padding: 0 }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Aboutpage />} />
-
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/service" element={<Servicepage />}>

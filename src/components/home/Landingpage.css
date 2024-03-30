@@ -1,0 +1,139 @@
+.landing {
+  display: flex;
+  gap: 30px;
+  background-color: var(--color-dark-1);
+  /* background-color: rebeccapurple; */
+  padding: 20px;
+  /* width: 100%; */
+}
+.landingLeft {
+  /* background-color: red; */
+  width: 50%;
+  padding-top: 50px;
+}
+.landingLeft > h1 {
+  font-size: 55px;
+  color: var(--color-green-1);
+}
+.landingLeftTop {
+  /* background-color: yellow; */
+  /* border: 1px solid red; */
+  height: 230px;
+}
+.landingData {
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* padding: 0; */
+  /* background-color: red; */
+}
+.landingData > p {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #fff;
+  text-align: start;
+}
+.landingRight {
+  flex: 1;
+}
+.landingBtnContainer {
+  display: flex;
+  gap: 30px;
+}
+.lJoinBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 8px;
+  line-height: -0.5;
+  font-weight: 400;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-family: var(--font-primary);
+  background-color: var(--color-purple-1);
+  padding: 19px 30px;
+  color: white;
+  width: 150px;
+}
+.lJoinBtn:hover {
+  background-color: transparent !important;
+  border: 2px solid var(--color-purple-1);
+  color: var(--color-purple-1);
+}
+
+.callUsBtn {
+  background-color: transparent;
+  border: 2px solid var(--color-green-1);
+  color: var(--color-purple-1);
+  padding: 19px 30px;
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
+}
+.callUsBtn:hover {
+  background-color: var(--color-green-1);
+  border: 0px;
+  color: var(--color-dark-1);
+}
+.landingRight {
+  width: 50%;
+  height: 550px;
+  /* background-color: red; */
+}
+.landingRight > img {
+  width: 100%;
+  height: 120%;
+}
+
+@media screen and (max-width: 1080px) {
+  .landing {
+    flex-direction: column;
+    padding: 40px 80px;
+  }
+  .landingLeft {
+    width: 100%;
+  }
+  .landingRight {
+    display: none;
+  }
+}
+@media screen and (max-width: 810px) {
+  .landing {
+    padding: 40px 10px;
+  }
+  .landingLeft {
+    padding-top: 10px;
+  }
+  .landingData > p,
+  .landingLeft > h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .landing {
+    padding: 30px 10px;
+  }
+  .landingData > p,
+  .landingLeft > h1 {
+    font-size: 30px;
+  }
+  .landingLeftBottom {
+    width: 100%;
+  }
+  .landingBtnContainer {
+    flex-direction: column;
+    width: 100%;
+    /* background-color: pink; */
+    overflow: hidden;
+  }
+
+  .callUsBtn,
+  .lJoinBtn {
+    width: 99%;
+    padding: 0;
+    padding: 19px 0px;
+  }
+}

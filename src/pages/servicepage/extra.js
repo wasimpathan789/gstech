@@ -578,3 +578,36 @@ const ITConsulting = () => {
 };
 
 export default ITConsulting;
+
+
+          {/* <h5>Golden Solutions Services</h5> */}
+          {/* <div className="hServiceSlider">
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={3}
+              modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
+              navigation
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+              className="homeSwiper"
+            >
+              <SwiperSlide className="swiperSlide"></SwiperSlide>
+              <SwiperSlide className="swiperSlide"> </SwiperSlide>
+              <SwiperSlide className="swiperSlide"> </SwiperSlide>
+              <SwiperSlide className="swiperSlide"> </SwiperSlide>
+              <SwiperSlide className="swiperSlide"> </SwiperSlide>
+              <SwiperSlide className="swiperSlide"> </SwiperSlide>
+              <SwiperSlide className="swiperSlide"> </SwiperSlide>
+              ...
+            </Swiper>
+          </div> */}
+          {/* <div className="arrowBtnContainer">
+            <button className="rightButton">
+              <FaArrowRight style={{ rotate: "180deg" }} />
+            </button>
+            <button className="rightButton">
+              <FaArrowRight />
+            </button>
+          </div> */}

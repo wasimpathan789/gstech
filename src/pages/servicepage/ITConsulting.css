@@ -6,6 +6,7 @@
   display: flex;
   gap: 30px;
   padding: 80px;
+  /* background-color: pink; */
 }
 .itConsulting2 {
   background-color: #081158;
@@ -164,7 +165,7 @@
   .itConsulting,
   .infraTwoCards,
   .digitalWebType {
-    padding: 40px 80px;
+    padding: 40px;
     /* background-color: red; */
     flex-direction: column;
   }
@@ -191,11 +192,13 @@
   .infraCardContainer {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 810px) {
   .itConsulting,
+  .itConsulting2,
   .infraTwoCards {
-    padding: 40px 10px;
+    padding: 40px !important;
+  }
+  .itContainerContent {
+    /* background-color: red; */
   }
   .itContainerContent > div {
     padding: 10px;
@@ -213,8 +216,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .itConsulting,
+  .itConsulting2,
   .infraTwoCards {
-    padding: 30px 10px;
+    padding: 30px 10px !important;
   }
   .itCotainerRight > img {
     width: 80%;

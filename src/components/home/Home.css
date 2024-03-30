@@ -1,0 +1,394 @@
+.homeContainer {
+  /* padding: 80px; */
+  /* background-color: var(--color-purple-1); */
+  background-color: var(--color-dark-2);
+  background-color: var(--color-light-3);
+  /* padding-top: 30px; */
+  /* border-top: 1px solid #000; */
+}
+.ourTargetContainer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 80px;
+  background-color: var(--color-light-3);
+}
+
+.ourTarget {
+  background-color: transparent;
+  border: 1px solid red;
+  border: 1px solid var(--color-dark-2);
+  border-radius: 8px;
+  padding: 60px 60px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.targetIcon {
+  color: var(--color-green-1);
+  font-size: 64px;
+}
+.ourTarget > h4 {
+  margin-top: 37px;
+  font-size: 24px;
+  line-height: 27px;
+  color: var(--color-dark-1);
+
+  font-weight: 700;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+}
+.ourTarget > p {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 17px;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.ourTarget:hover {
+  background-color: var(--color-dark-2);
+  color: white;
+  transition: all 0.5s ease-out;
+  /* transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1); */
+}
+.ourTarget:hover h4:not(:hover) {
+  color: white;
+}
+
+.greetings {
+  height: 100%;
+  padding: 80px;
+}
+
+.greetings > h1 {
+  text-align: start !important;
+}
+.greetingWrapper {
+  display: flex;
+}
+.greetingLeft {
+  flex: 0.6;
+}
+.greetingLeft > h5 {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  /* margin-left: 20px; */
+  font-family: "DM Sans", sans-serif;
+}
+.greetingRight {
+  flex: 0.4;
+}
+.greetingRight > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ourVisionContainer {
+  display: flex;
+  margin-top: 40px;
+  gap: 30px;
+}
+.ourVision {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.ourVision > h3 {
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: rgb(0, 36, 52);
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+.ourVision > p {
+  color: rgb(64, 77, 96);
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.newServices {
+  height: 100%;
+  padding: 80px;
+  /* width: 95%; */
+}
+
+.newServicesCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  margin-top: 40px;
+}
+.newServicesCard {
+  height: 300px;
+  /* padding: 20px; */
+  background-color: white;
+  /* width: 100%; */
+  border-radius: 8px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.newServicesCardTop > h3 {
+  font-size: 18px;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #6440fb;
+  margin-left: 20px;
+  transition: all 0.3s ease-in;
+}
+.newServicesCardTop > h3:hover,
+.newServicesCardDescription > h5:hover,
+.newServiceCardBottomLink > h5:hover {
+  margin-left: 20px;
+  padding-left: 20px;
+  transition: all 0.3s ease-out;
+}
+.newServiceCardBottom {
+  padding: 20px;
+  border-top: 1px solid #ededed;
+}
+.newServiceCardBottom > li > h5 {
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: all 0.3s ease-in;
+  color: red;
+}
+
+.newServiceCardBottom > Link {
+  text-decoration: none;
+  color: red;
+}
+.newServiceCardBottomLink > h5 {
+  transition: all 0.3s ease-in;
+}
+
+.newServicesCardDescription > h5 {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-left: 20px;
+  font-family: "DM Sans", sans-serif;
+  transition: all 0.3s ease-in;
+
+  /* color: red; */
+}
+.newServicesCard > p {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+
+.hServices {
+  height: 500px;
+  width: 100%;
+  /* background-color: red; */
+}
+.hServices > h1,
+.greetings > h1,
+.newServices > h1,
+.ourCurrent > h1,
+.testomonialCotainer > h1 {
+  margin-bottom: 30px;
+  font-family: Sato, sans-serif;
+  font-size: 64px;
+  line-height: 1.1em;
+  font-weight: 500;
+  color: #081158;
+  font-weight: 500;
+  text-align: start;
+}
+.hserviceCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 80px;
+  /* height: 100% !important; */
+  /* position: absolute; */
+  grid-gap: 30px;
+  height: 2000px;
+  background-color: red;
+  position: fixed;
+}
+.hServiceCards1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+}
+/* height: 20px; *
+  padding: 80px;
+  background-color: red;
+}
+/* .hServiceSlider {
+  height: 100%;
+  height: 700px;
+}
+.homeSwiper {
+  background-color: transparent;
+  padding: 20px;
+  height: 100%;
+  height: 400px !important;
+  background-color: gray;
+}
+.swiperSlide {
+  width: 350px !important;
+}
+.arrowBtnContainer {
+  display: flex;
+  gap: 10px;
+}
+.rightButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+} */
+.ourCurrent {
+}
+.ourCurrent > h1 {
+  margin-top: 50px;
+}
+.ourCurrentImage {
+  width: 100%;
+  height: 400px;
+}
+.ourCurrentImage > img {
+  width: 100%;
+  height: 100%;
+}
+.ourCompanyProjectCotainer {
+  background-color: #081158;
+  padding: 80px;
+}
+.testomonialCotainer {
+  padding: 80px;
+  background-color: rgb(228, 237, 243);
+}
+.testomonialCotainer > h3,
+.newServices > h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: -2px 0 2px 0;
+  color: #b39434;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  font-size: 14px;
+}
+.testomonialCotainer > h1 {
+  text-align: start;
+  margin-top: 20px;
+}
+.ourCustomer {
+  padding: 80px;
+}
+@media screen and (max-width: 1080px) {
+  .ourTargetContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px;
+    background-color: var(--color-light-3);
+  }
+  .greetings,
+  .newServices {
+    padding: 80px;
+  }
+  .newServicesCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ourCurrent > h1,
+  .hServices > h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 50px;
+
+    text-align: center;
+  }
+}
+@media screen and (max-width: 810px) {
+  .ourTargetContainer,
+  .greetings,
+  .newServices,
+  .ourCompanyProjectCotainer,
+  .testomonialCotainer,
+  .ourCustomer {
+    padding: 40px;
+  }
+  .ourCurrent > h1,
+  .hServices > h1,
+  .greetings > h1,
+  .newServices > h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greetingWrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ourCompanyCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 580px) {
+  .ourTargetContainer,
+  .greetings,
+  .newServices,
+  .ourCompanyProjectCotainer,
+  .testomonialCotainer,
+  .ourCustomer {
+    padding: 40px 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ourCurrent > h1,
+  .hServices > h1 {
+    font-size: 20px;
+  }
+  .ourVisionContainer {
+    flex-direction: column;
+  }
+  .newServicesCards,
+  .ourCompanyCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 
+<div className="hServiceCards1">
+<SolutionCard title={} />
+<SolutionCard />
+<SolutionCard />
+<SolutionCard />
+</div>
+<HomeCard
+title={"IT Consulting"}
+description={
+  "IT consulting services are advisory services that help clients assess different technology strategies and, in doing so, align their technology strategies with their business or process strategies. These services support customers’ IT initiatives by providing strategic, architectural, operational and implementation planning... "
+} */
+/* /> */

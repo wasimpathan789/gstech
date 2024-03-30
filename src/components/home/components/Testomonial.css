@@ -1,0 +1,116 @@
+#app {
+  height: 100%;
+}
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mySwiper {
+  background-color: yellow;
+}
+.mySwiperSlide {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  /* background-color: red; */
+  /* padding: 80px; */
+}
+.mySwiperSlide > h3 {
+  width: 70%;
+}
+
+.clientDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.clientImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clientName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.clientName > h1 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #119da4;
+  font-family: "Outfit", sans-serif;
+}
+.clientName > h2 {
+  color: #ccc;
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-family: "Outfit", sans-serif;
+}
+
+.swiper-button-prev {
+  color: red;
+  /* background-color: pink; */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  size: 10px;
+  font-size: 20px;
+  background-image: url("../../../assets//images//icon/washu.png") !important;
+}
+/* .swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+} */
+.swiper-button-next {
+  color: red;
+  /* background-color: pink; */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  size: 10px;
+  font-size: 20px;
+  background-image: url("http://www.w3.org/2000/svg") !important;
+  background-repeat: no-repeat;
+}

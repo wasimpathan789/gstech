@@ -7,6 +7,24 @@ import image3 from "../../assets/images/image3.png";
 
 // icons
 import { TbWorld } from "react-icons/tb";
+import OurCustomer from "../home/components/OurCustomer";
+import {
+  apple,
+  aws,
+  azure,
+  cisco,
+  customer1,
+  customer2,
+  google,
+  hp,
+  kpi,
+  odoo,
+  oracle,
+  sap,
+  sun,
+  uipath,
+  zoho,
+} from "../../utils/images";
 
 const AboutUs = () => {
   return (
@@ -74,29 +92,42 @@ const AboutUs = () => {
         </h5>
         <div className="ourCompanyCards">
           <div className="ourCard">
-            <TbWorld style={{ fontSize: "64px", color: "#00FF84" }} />
+            <TbWorld
+              className="ourCardIcon"
+              style={{ fontSize: "50px", color: "#00FF84" }}
+            />
             <h1>Countries</h1>
             <p>4 +</p>
           </div>
           <div className="ourCard">
-            <TbWorld style={{ fontSize: "64px", color: "#00FF84" }} />
+            <TbWorld
+              className="ourCardIcon"
+              style={{ fontSize: "50px", color: "#00FF84" }}
+            />
             <h1>Clients</h1>
             <p>30+</p>
           </div>
           <div className="ourCard">
-            <TbWorld style={{ fontSize: "64px", color: "#00FF84" }} />
+            <TbWorld
+              className="ourCardIcon"
+              style={{ fontSize: "50px", color: "#00FF84" }}
+            />
             <h1>Projects</h1>
             <p>40 +</p>
           </div>
           <div className="ourCard">
             <TbWorld
-              style={{ fontSize: "64px", color: "#00FF84", marginTop: "-10px" }}
+              className="ourCardIcon"
+              style={{ fontSize: "50px", color: "#00FF84" }}
             />
             <h1>Team Members</h1>
             <p>25 +</p>
           </div>
           <div className="ourCard">
-            <TbWorld style={{ fontSize: "64px", color: "#00FF84" }} />
+            <TbWorld
+              className="ourCardIcon"
+              style={{ fontSize: "50px", color: "#00FF84" }}
+            />
             <h1>Team Experience</h1>
             <p>20 +</p>
           </div>
@@ -106,9 +137,34 @@ const AboutUs = () => {
       {/* technology we work  */}
       <div className="technology">
         <h1> Technology Platforms We Work With</h1>
-        {/* <AboutSlider/> */}
-
+        <OurCustomer
+          image1={apple}
+          image2={hp}
+          image3={uipath}
+          image4={azure}
+          image5={cisco}
+          image6={google}
+          image7={aws}
+          width={"150px"}
+          height={"150px"}
+          swiperHeight={"200px"}
+        />
+      </div>
+      <div className="platform">
         <h1>Application Platforms We Work With</h1>
+        <OurCustomer
+          image1={sun}
+          image2={odoo}
+          image3={zoho}
+          image4={sap}
+          image5={kpi}
+          image6={oracle}
+          image7={aws}
+          width={"150px"}
+          height={"150px"}
+          swiperHeight={"200px"}
+          bg={"rgb(228, 237, 243)"}
+        />
       </div>
     </div>
   );

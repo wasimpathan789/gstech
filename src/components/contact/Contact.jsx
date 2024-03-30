@@ -6,7 +6,9 @@ const Contact = () => {
   return (
     <div className="contactContainer">
       <div className="contactHeadline">
-        <h1>Contact Us</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">
+          Contact Us
+        </h1>
       </div>
       <div className="map">
         <iframe
@@ -21,67 +23,142 @@ const Contact = () => {
       </div>
       <div className="address">
         <div className="rightContainer">
-          <h1>Keep In Touch With Us.</h1>
+          <h1 data-aos="fade-right" data-aos-duration="1200">
+            Keep In Touch With Us.
+          </h1>
           <h3></h3>
 
           <div className="addressCards">
-            <div className="addressCard">
-              <div className="cardRight">
-                <div className="iconDiv">
-                  <FaLocationDot className="icon" />
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              className="addressCard"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                className="cardRight"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  className="iconDiv"
+                >
+                  <FaLocationDot
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    className="icon"
+                  />
                 </div>
               </div>
               <div className="cardLeft">
-                <p>
+                <p data-aos="fade-right" data-aos-duration="1200">
                   Abu Bakr Siddique, Narjis Building, <br /> Post Box - 12301,
                   Riyadh - 11473, <br /> Saudi Arabia.
                 </p>
               </div>
             </div>
             <div className="addressCard">
-              <div className="cardRight">
-                <div className="iconDiv">
-                  <MdEmail className="icon" />
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                className="cardRight"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  className="iconDiv"
+                >
+                  <MdEmail
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    className="icon"
+                  />
                 </div>
               </div>
               <div className="cardLeft">
-                <p>hello@gstech.com.sa</p>
+                <p data-aos="fade-right" data-aos-duration="1200">
+                  hello@gstech.com.sa
+                </p>
               </div>
             </div>
             <div className="addressCard">
-              <div className="cardRight">
-                <div className="iconDiv">
-                  <FaPhoneVolume className="icon" />
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                className="cardRight"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  className="iconDiv"
+                >
+                  <FaPhoneVolume
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    className="icon"
+                  />
                 </div>
               </div>
               <div className="cardLeft">
-                <p>920012913</p>
+                <p data-aos="fade-right" data-aos-duration="1200">
+                  920012913
+                </p>
               </div>
             </div>
             <div className="addressCard">
-              <div className="cardRight">
-                <div className="iconDiv">
-                  <FaMobileScreen className="icon" />
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                className="cardRight"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  className="iconDiv"
+                >
+                  <FaMobileScreen
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    className="icon"
+                  />
                 </div>
               </div>
               <div className="cardLeft">
-                <p>+966 595007999</p>
+                <p data-aos="fade-right" data-aos-duration="1200">
+                  +966 595007999
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div className="leftContainer">
-          <h1>Send a Message.</h1>
+          <h1 data-aos="fade-left" data-aos-duration="1200">
+            Send a Message.
+          </h1>
           <h3></h3>
           <form action="">
             <div className="formTop">
               <div className="nameContainer">
-                <h5>Name</h5>
-                <input placeholder="Your Name" type="text" name="" id="" />
+                <h5 data-aos="fade-left" data-aos-duration="1200">
+                  Name
+                </h5>
+                <input
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  placeholder="Your Name"
+                  type="text"
+                  name=""
+                  id=""
+                />
               </div>
               <div className="nameContainer">
-                <h5>Email address</h5>
+                <h5 data-aos="fade-left" data-aos-duration="1200">
+                  Email address
+                </h5>
                 <input
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
                   placeholder="Your Email Adress"
                   type="email"
                   name=""
@@ -91,8 +168,12 @@ const Contact = () => {
             </div>
             <div className="formTop">
               <div className="nameContainer">
-                <h5>Mobile Number</h5>
+                <h5 data-aos="fade-left" data-aos-duration="1200">
+                  Mobile Number
+                </h5>
                 <input
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
                   placeholder="Your Mobile Number"
                   type="number"
                   name=""
@@ -100,8 +181,12 @@ const Contact = () => {
                 />
               </div>
               <div className="nameContainer">
-                <h5>Phone Number</h5>
+                <h5 data-aos="fade-left" data-aos-duration="1200">
+                  Phone Number
+                </h5>
                 <input
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
                   placeholder="Your Phone Number"
                   type="number"
                   name=""
@@ -111,14 +196,27 @@ const Contact = () => {
             </div>
             <div className="formBottom">
               <div className="nameContainer">
-                <h5>Message...</h5>
+                <h5 data-aos="fade-left" data-aos-duration="1200">
+                  Message...
+                </h5>
                 <textarea
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
                   placeholder="Type your message here ..."
                   name=""
                   id=""
                 ></textarea>
               </div>
             </div>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              className="submitBtn"
+            >
+              <p data-aos="fade-left" data-aos-duration="1200">
+                Submit
+              </p>
+            </button>
           </form>
         </div>
       </div>

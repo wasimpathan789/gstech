@@ -24,6 +24,7 @@
 
 .navbar {
   background-color: var(--color-dark-6);
+  background-color: var(--color-dark-1);
   padding: 10px 40px;
   height: 45px;
   align-items: center;
@@ -31,6 +32,7 @@
   align-items: center;
   cursor: pointer;
   display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .logo {
   width: 100%;
@@ -41,15 +43,13 @@
 .logo > img {
   width: 150px;
   /* height: 80%; */
- height: 50px;
-
+  height: 50px;
 }
 .navbarContent {
   /* width: 100%; */
   display: flex;
   align-items: center;
   position: relatiave;
-  background-color: red;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   flex: 8;
-  gap: 20px; 
+  gap: 20px;
   /* background-color: rebeccapurple; */
 }
 .navLinks {
@@ -99,7 +99,7 @@
   display: none;
   cursor: pointer;
 }
-.navbarContentActive{
+.navbarContentActive {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,10 +110,9 @@
   .navbar {
     padding: 10px 10px;
   }
-
 }
 @media screen and (max-width: 870px) {
-  .navbarContentActive{
+  .navbarContentActive {
     display: none;
   }
   .hamburger {
@@ -128,15 +127,16 @@
     padding: 20px;
     gap: 30px;
     /* background-color: green; */
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     /* width: 95%; */
     overflow: hidden;
     left: -10px;
     background-color: green;
+    width: 98%;
     opacity: 0.8;
-
   }
-  .navList{
+  .navList {
     display: flex;
     flex-direction: column;
     /* width: 100%; */
@@ -146,11 +146,10 @@
     align-items: flex-start;
     /* background-color: red; */
   }
-  .navLinks{
+  .navLinks {
     /* border-bottom: 1px solid blue; */
     box-shadow: rgba(230, 178, 178, 0.05) 0px 1px 2px 0.1px;
     /* background-color: red; */
-
   }
   .navbar {
     display: flex;
@@ -158,13 +157,12 @@
   }
 }
 @media screen and (max-width: 580px) {
-.navbarContent{
-background-color: green;
-  position: absolute;
-  width: 94%;
-  overflow: hidden;
-}
-
+  .navbarContent {
+    background-color: green;
+    position: absolute;
+    width: 94%;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 480px) {
