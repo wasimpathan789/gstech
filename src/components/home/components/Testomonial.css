@@ -141,6 +141,12 @@ body {
     display: none;
   }
   .mySwiperSlide > h3 {
-    width: 97%;
+    width: 90%;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 20px;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.3s ease-in;
   }
 }
