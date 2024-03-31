@@ -310,6 +310,10 @@
 .ourCustomerContainer {
   padding: 80px;
 }
+.ourCard > p {
+  color: var(--color-green-1);
+  font-weight: 500;
+}
 @media screen and (max-width: 1080px) {
   .ourTargetContainer {
     display: grid;

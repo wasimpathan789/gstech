@@ -5,7 +5,7 @@ import Service from "../../components/service/Service";
 
 const Servicepage = () => {
   return (
-    <div className="servicepage">
+    <div className="servicepage" style={{ overflow: "hidden" }}>
       <Navbar />
       <Service />
       <Footer />

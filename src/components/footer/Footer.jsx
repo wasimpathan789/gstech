@@ -90,22 +90,18 @@ const Footer = () => {
         <h4 data-aos="fade-up" data-aos-duration="1000">
           follow us
         </h4>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="social-links"
-        >
-          <a data-aos="fade-up" data-aos-duration="1000" href="#">
+        <div className="social-links">
+          <a href="#">
             <FaLinkedin style={{ fontSize: "40px" }} />
           </a>
-          <a data-aos="fade-up" data-aos-duration="1000" href="#">
+          <a href="#">
             <FaInstagram style={{ fontSize: "40px" }} />
           </a>
 
-          <a data-aos="fade-up" data-aos-duration="1000" href="#">
+          <a href="#">
             <FaLinkedin style={{ fontSize: "40px" }} />
           </a>
-          <a data-aos="fade-up" data-aos-duration="1000" href="#">
+          <a href="#">
             <FaInstagram style={{ fontSize: "40px" }} />
           </a>
         </div>
