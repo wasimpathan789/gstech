@@ -32,6 +32,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
+  padding: 0px;
 }
 
 .swiper-slide img {
@@ -41,7 +43,6 @@ body {
   object-fit: cover;
 }
 .mySwiper {
-  background-color: yellow;
 }
 .mySwiperSlide {
   /* background-color: red; */
@@ -51,9 +52,12 @@ body {
   width: 80%;
   /* background-color: red; */
   /* padding: 80px; */
+  /* background-color: pink !important; */
+  height: auto;
 }
 .mySwiperSlide > h3 {
-  width: 70%;
+  width: 80%;
+  /* background-color: yellow; */
 }
 
 .clientDetails {
@@ -113,4 +117,30 @@ body {
   font-size: 20px;
   background-image: url("http://www.w3.org/2000/svg") !important;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 580px) {
+  .mySwiper {
+    /* height: 500px; */
+    /* background-color: yellow; */
+    /* height: 100% !important; */
+    /* margin-top: 100px; */
+    margin-top: 70px;
+    height: 450px;
+  }
+  .clientDetails {
+    /* margin-top: 40px; */
+    /* background-color: yellow; */
+  }
+  .tIconContainer {
+    margin-top: 20px;
+    /* background-color: red; */
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .mySwiperSlide > h3 {
+    width: 97%;
+  }
 }

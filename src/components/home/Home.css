@@ -32,9 +32,12 @@
   color: var(--color-green-1);
   font-size: 64px;
 }
+.targetIcon > h4 {
+  font-size: 20px;
+}
 .ourTarget > h4 {
   margin-top: 37px;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 27px;
   color: var(--color-dark-1);
 
@@ -234,7 +237,7 @@
   /* position: absolute; */
   grid-gap: 30px;
   height: 2000px;
-  background-color: red;
+  /* background-color: red; */
   position: fixed;
 }
 .hServiceCards1 {
@@ -275,6 +278,7 @@
 }
 .ourCurrent > h1 {
   margin-top: 50px;
+  text-align: center;
 }
 .ourCurrentImage {
   width: 100%;
@@ -313,6 +317,10 @@
 .ourCard > p {
   color: var(--color-green-1);
   font-weight: 500;
+}
+.newServiceCardBottomLink > h5 {
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
 }
 @media screen and (max-width: 1080px) {
   .ourTargetContainer {
@@ -353,9 +361,11 @@
   .hServices > h1,
   .greetings > h1,
   .newServices > h1,
+  .testomonialCotainer > h1,
   .ourCustomerContainer > h1 {
     font-size: 30px;
-    text-align: center;
+    text-align: start;
+    /* color: red; */
   }
   .greetingWrapper {
     flex-direction: column;
@@ -373,13 +383,17 @@
   .testomonialCotainer,
   .ourCustomer,
   .ourCustomerContainer {
-    padding: 40px 10px;
+    padding: 30px 10px;
     grid-template-columns: repeat(1, 1fr);
   }
   .ourCurrent > h1,
   .hServices > h1,
-  .ourCustomerContainer > h1 {
-    font-size: 20px;
+  .ourCustomerContainer > h1,
+  .testomonialCotainer > h1,
+  .ourCurrent > h1 {
+    font-size: 30px;
+    text-align: start;
+    /* margin-top: 20px; */
   }
   .ourVisionContainer {
     flex-direction: column;
@@ -387,6 +401,40 @@
   .newServicesCards,
   .ourCompanyCards {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .testomonialCotainer {
+    height: 600px;
+    /* background-color: red; */
+  }
+  .newServices > h1 {
+    margin-bottom: 30px;
+    font-family: Sato, sans-serif;
+    font-size: 30px;
+    line-height: 1.1em;
+    font-weight: 500;
+    color: #081158;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 30px;
+  }
+  .testomonialCotainer > h3,
+  .newServices > h3 {
+    margin-bottom: -20px;
+    margin-top: 0px;
+  }
+  .newServices > h3 {
+    margin-left: -15px;
+  }
+  .testomonialCotainer > h1 {
+    margin-bottom: -40px;
+  }
+  .ourCustomerContainer > h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .greetings {
+    /* background-color: pink; */
+    margin-top: -25px;
   }
 }
 
