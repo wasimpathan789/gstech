@@ -67,7 +67,7 @@
   transition: all 0.3s ease-in-out;
 }
 .navLinks:hover {
-  color: red;
+  color: var(--color-green-1);
   scale: 1.05;
   transition: all 0.3s ease-in-out;
 }
