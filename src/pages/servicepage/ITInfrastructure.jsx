@@ -7,6 +7,7 @@ import unTitle from "../../assets/images/untitled.png";
 import ParagraphContainer2 from "../../components/service/ParagraphContainer2";
 import SubParagraphContainer2 from "../../components/service/SubParagraphContainer2";
 import SubParagraphContainer from "../../components/service/SubParagraphContainer";
+import { cloud, data, infra, infra2, web } from "../../utils/images";
 
 const ITInfrastructure = () => {
   return (
@@ -55,7 +56,7 @@ const ITInfrastructure = () => {
             />
           </div>
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={infra} />
       </div>
       <div className="infraTwoCards">
         <h2>
@@ -95,7 +96,7 @@ const ITInfrastructure = () => {
       </div>
       {/* second conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={data} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Data Administration
@@ -154,12 +155,12 @@ const ITInfrastructure = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={infra2} />
       </div>
 
       {/* fourth conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={web} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Web Services
@@ -232,10 +233,8 @@ const ITInfrastructure = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={cloud} />
       </div>
-
-     
     </div>
   );
 };

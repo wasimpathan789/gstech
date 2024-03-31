@@ -1,77 +1,36 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import "./Service.css";
+import { servicesLink } from "../../data";
+import { useState } from "react";
 
 const Service = ({ Children }) => {
+  const [active, setActive] = useState(null);
   return (
     <div className="serviceContainer">
       <div className="serviceContainerWrapper">
-        <h1>Our Golden Servies</h1>
-        <h5>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dicta.
+        <h1 data-aos="fade-left" data-aos-duration="1000">
+          Our Golden Servies
+        </h1>
+        <h5 data-aos="fade-right" data-aos-duration="1000">
+          We deal with following services.
         </h5>
 
         <div className="serviceWrapper">
-          <Link
-            className="serviceNavLinks active"
-            to={"/service/it"}
-            style={{ textDecoration: "none" }}
-          >
-            <p>IT Consulting </p>
-          </Link>
-          <Link
-            className="serviceNavLinks"
-            to={"/service/business"}
-            style={{ textDecoration: "none" }}
-          >
-            <p>
-              Business <br /> Application <br /> Solution
-            </p>
-          </Link>
-          <Link
-            className="serviceNavLinks"
-            to={"/service/digital"}
-            style={{ textDecoration: "none" }}
-          >
-            <p>
-              Digital <br /> Technology <br /> Solution
-            </p>
-          </Link>
-          <Link
-            className="serviceNavLinks"
-            to={"/service/project"}
-            style={{ textDecoration: "none" }}
-          >
-            <p>
-              Project <br /> Management
-            </p>
-          </Link>
-          <Link
-            className="serviceNavLinks"
-            to={"/service/infra"}
-            style={{ textDecoration: "none" }}
-          >
-            <p>
-              IT <br /> Infrastructure <br /> Solution
-            </p>
-          </Link>
-          <Link
-            className="serviceNavLinks"
-            to={"/service/governance"}
-            style={{ textDecoration: "none" }}
-          >
-            <p>
-              Governance, <br /> Risk and Compliances
-            </p>
-          </Link>
-          <Link
-            className="serviceNavLinks"
-            to={"/service/msi"}
-            style={{ textDecoration: "none" }}
-          >
-            <p>
-              MIS <br /> Solution
-            </p>
-          </Link>
+          {servicesLink.map((link) => (
+            <NavLink
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              // className="serviceNavLinks "
+              // className={({ isActive }) =>
+              //   isActive ? "active" : "serviceNavLinks"
+              // }
+              className={`serviceNavLinks ${active == link && "active"}`}
+              to={link.route}
+              style={{ textDecoration: "none" }}
+            >
+              <p>{link.title}</p>
+            </NavLink>
+          ))}
         </div>
       </div>
 

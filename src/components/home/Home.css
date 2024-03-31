@@ -215,7 +215,8 @@
 .greetings > h1,
 .newServices > h1,
 .ourCurrent > h1,
-.testomonialCotainer > h1 {
+.testomonialCotainer > h1,
+.ourCustomerContainer > h1 {
   margin-bottom: 30px;
   font-family: Sato, sans-serif;
   font-size: 64px;
@@ -305,7 +306,8 @@
   text-align: start;
   margin-top: 20px;
 }
-.ourCustomer {
+
+.ourCustomerContainer {
   padding: 80px;
 }
 @media screen and (max-width: 1080px) {
@@ -324,7 +326,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .ourCurrent > h1,
-  .hServices > h1 {
+  .hServices > h1,
+  .ourCustomerContainer > h1 {
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 50px;
@@ -338,13 +341,15 @@
   .newServices,
   .ourCompanyProjectCotainer,
   .testomonialCotainer,
-  .ourCustomer {
+  .ourCustomer,
+  .ourCustomerContainer {
     padding: 40px;
   }
   .ourCurrent > h1,
   .hServices > h1,
   .greetings > h1,
-  .newServices > h1 {
+  .newServices > h1,
+  .ourCustomerContainer > h1 {
     font-size: 30px;
     text-align: center;
   }
@@ -362,12 +367,14 @@
   .newServices,
   .ourCompanyProjectCotainer,
   .testomonialCotainer,
-  .ourCustomer {
+  .ourCustomer,
+  .ourCustomerContainer {
     padding: 40px 10px;
     grid-template-columns: repeat(1, 1fr);
   }
   .ourCurrent > h1,
-  .hServices > h1 {
+  .hServices > h1,
+  .ourCustomerContainer > h1 {
     font-size: 20px;
   }
   .ourVisionContainer {

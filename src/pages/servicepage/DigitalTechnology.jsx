@@ -8,6 +8,18 @@ import ParagraphContainer2 from "../../components/service/ParagraphContainer2";
 import iTImage from "../../assets/images/it1.jpg";
 import unTitle from "../../assets/images/untitled.png";
 import DigitalCard from "../../components/service/DigitalCard/DigitalCard";
+import {
+  consultant,
+  digital,
+  dotnet,
+  framework,
+  graphic,
+  haskel,
+  mobile,
+  php,
+  progressive,
+  web,
+} from "../../utils/images";
 
 const DigitalTechnology = () => {
   const [status, setStatus] = useState(false);
@@ -40,12 +52,12 @@ const DigitalTechnology = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={digital} />
       </div>
 
       {/* second conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={web} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Web Designing & Web Development
@@ -66,38 +78,38 @@ const DigitalTechnology = () => {
 
         <div className="digitalCardsContainer">
           <DigitalCard
-            image={iTImage}
+            image={php}
             text={"PHP Web Development"}
             animation1={"fade-up"}
             animation2={"fade-up"}
           />
           <DigitalCard
-            image={iTImage}
-            text={"PHP Web Development"}
+            image={dotnet}
+            text={"Dot Net Web Development "}
             animation1={"fade-up"}
             animation2={"fade-up"}
           />
           <DigitalCard
-            image={iTImage}
-            text={"PHP Web Development"}
+            image={progressive}
+            text={"Progressive Web Development"}
             animation1={"fade-up"}
             animation2={"fade-up"}
           />
           <DigitalCard
-            image={iTImage}
-            text={"PHP Web Development"}
+            image={web}
+            text={"Real-Time Web Development"}
             animation1={"fade-up"}
             animation2={"fade-up"}
           />
           <DigitalCard
-            image={iTImage}
-            text={"PHP Web Development"}
+            image={haskel}
+            text={"Haskell Web Development"}
             animation1={"fade-up"}
             animation2={"fade-up"}
           />
           <DigitalCard
-            image={iTImage}
-            text={"PHP Web Development"}
+            image={framework}
+            text={"Framework Web Development"}
             animation1={"fade-up"}
             animation2={"fade-up"}
           />
@@ -123,12 +135,12 @@ const DigitalTechnology = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={mobile} />
       </div>
 
       {/* fourth conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={graphic} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Graphic Design
@@ -187,7 +199,7 @@ const DigitalTechnology = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={consultant} />
       </div>
     </div>
   );

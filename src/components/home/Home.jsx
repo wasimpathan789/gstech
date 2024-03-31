@@ -183,19 +183,22 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="ourCustomer">
-          <OurCustomer
-            image1={customer1}
-            image2={customer2}
-            image3={customer3}
-            image4={customer4}
-            image5={customer5}
-            image6={customer6}
-            image7={customer7}
-            width={"150px"}
-            height={"150px"}
-            swiperHeight={"200px"}
-          />
+        <div className="ourCustomerContainer">
+          <h1>Our Customer</h1>
+          <div className="ourCustomer">
+            <OurCustomer
+              image1={customer1}
+              image2={customer2}
+              image3={customer3}
+              image4={customer4}
+              image5={customer5}
+              image6={customer6}
+              image7={customer7}
+              width={"150px"}
+              height={"150px"}
+              swiperHeight={"200px"}
+            />
+          </div>
         </div>
 
         <div className="greetings">

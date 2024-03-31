@@ -10,6 +10,18 @@ import SubParagraphContainer from "../../components/service/SubParagraphContaine
 
 import ParagraphContainer2 from "../../components/service/ParagraphContainer2";
 import SubParagraphContainer2 from "../../components/service/SubParagraphContainer2";
+import {
+  account,
+  ai2,
+  business1,
+  crm,
+  hr,
+  manufacturing,
+  sigma,
+  supply,
+  supply2,
+  wms,
+} from "../../utils/images";
 
 const Business = () => {
   return (
@@ -41,11 +53,11 @@ const Business = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={business1} />
       </div>
       {/* second conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={account} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Accounting & Finance
@@ -129,12 +141,12 @@ const Business = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={hr} />
       </div>
 
       {/* fourth content  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={manufacturing} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Manufacturing
@@ -214,12 +226,12 @@ const Business = () => {
             />
           </div>
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={wms} />
       </div>
 
       {/* sixtht contetn  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={supply} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Supply Chain Management
@@ -372,12 +384,12 @@ const Business = () => {
             />
           </div>
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={sigma} />
       </div>
 
       {/* eight content  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={crm} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             CRM & Sales
@@ -455,7 +467,7 @@ const Business = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={ai2} />
       </div>
     </div>
   );

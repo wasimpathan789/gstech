@@ -1,12 +1,15 @@
 import React from "react";
 import { LuArrowBigRightDash } from "react-icons/lu";
-import iTImage from "../../assets/images/it1.jpg";
+
 import ServiceImageContainer from "../../components/service/ServiceImageContainer";
 import ParagraphContainer from "../../components/service/ParagraphContainer";
 import ParagraphContainer2 from "../../components/service/ParagraphContainer2";
 import SubParagraphContainer from "../../components/service/SubParagraphContainer";
 import SubParagraphContainer2 from "../../components/service/SubParagraphContainer2";
 
+// images
+import { buildingMis, data, mis, misStreaming } from "../../utils/images";
+import iTImage from "../../assets/images/it1.jpg";
 const MsiSolution = () => {
   return (
     <div className="itConsultingContainer">
@@ -30,12 +33,12 @@ const MsiSolution = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={mis} />
       </div>
 
       {/* second conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={buildingMis} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Building MIS
@@ -122,12 +125,12 @@ const MsiSolution = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={misStreaming} />
       </div>
 
       {/* fourth conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={data} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Data Science & Business Analytics

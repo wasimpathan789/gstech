@@ -5,6 +5,16 @@ import iTImage from "../../assets/images/it1.jpg";
 import ParagraphContainer2 from "../../components/service/ParagraphContainer2";
 import SubParagraphContainer2 from "../../components/service/SubParagraphContainer2";
 import SubParagraphContainer from "../../components/service/SubParagraphContainer";
+import {
+  governacneIt,
+  governanceMeeting,
+  governanceMeeting2,
+  governanceRisk,
+  governanceRisk2,
+  governanceRisk3,
+  license,
+  quality1,
+} from "../../utils/images";
 
 const Governance = () => {
   return (
@@ -22,11 +32,14 @@ const Governance = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer
+          animation={"fade-right"}
+          image={governanceRisk3}
+        />
       </div>
       {/* second conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={quality1} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Quality Assurance
@@ -100,12 +113,12 @@ const Governance = () => {
             />
           </div>
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={governacneIt} />
       </div>
 
       {/* fourth conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={license} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             License Management
@@ -168,11 +181,17 @@ const Governance = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer
+          animation={"fade-right"}
+          image={governanceMeeting}
+        />
       </div>
       {/* Sixt conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer
+          animation={"fade-right"}
+          image={governanceMeeting2}
+        />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Meeting Compliance

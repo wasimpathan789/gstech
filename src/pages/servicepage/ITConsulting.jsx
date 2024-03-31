@@ -6,6 +6,14 @@ import iTImage from "../../assets/images/it1.jpg";
 import ParagraphContainer from "../../components/service/ParagraphContainer";
 import ServiceImageContainer from "../../components/service/ServiceImageContainer";
 import ParagraphContainer2 from "../../components/service/ParagraphContainer2";
+import {
+  cio,
+  consulting,
+  managed,
+  resources,
+  strategic,
+  virtual,
+} from "../../utils/images";
 
 const ITConsulting = () => {
   return (
@@ -37,12 +45,12 @@ const ITConsulting = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={consulting} />
       </div>
 
       {/* second conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={virtual} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Virtual CTO Services
@@ -96,12 +104,12 @@ const ITConsulting = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={cio} />
       </div>
 
       {/* fourth content  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={strategic} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Strategic IT Solutions
@@ -167,12 +175,12 @@ const ITConsulting = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={managed} />
       </div>
 
       {/* sixtht contetn  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={resources} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             IT Management Resources

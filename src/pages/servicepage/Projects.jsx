@@ -6,6 +6,13 @@ import iTImage from "../../assets/images/it1.jpg";
 import unTitle from "../../assets/images/untitled.png";
 import ParagraphContainer2 from "../../components/service/ParagraphContainer2";
 import SubParagraphContainer2 from "../../components/service/SubParagraphContainer2";
+import {
+  erp,
+  jointVenture,
+  project,
+  software,
+  system,
+} from "../../utils/images";
 
 const Projects = () => {
   return (
@@ -30,7 +37,7 @@ const Projects = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={project} />
       </div>
 
       {/* second conent  */}
@@ -100,12 +107,12 @@ const Projects = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={software} />
       </div>
 
       {/* fourth conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={system} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             System Merger
@@ -157,12 +164,12 @@ const Projects = () => {
             }
           />
         </div>
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={erp} />
       </div>
 
       {/* sixth conent  */}
       <div className="itConsulting itConsulting2">
-        <ServiceImageContainer animation={"fade-right"} image={iTImage} />
+        <ServiceImageContainer animation={"fade-right"} image={jointVenture} />
         <div className="itCotainerLeft itCotainerLeft2">
           <h1 data-aos="fade-left" data-aos-duration="1000">
             Joint Venture IT
